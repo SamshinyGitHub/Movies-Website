@@ -1,0 +1,103 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#products-cont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{
+    width: 300px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 30px;
+    border-radius: 10px 10px 0 0;
+    text-align: justify;
+    box-shadow: 0 0 15px rgba(85, 85, 85, 0.2);
+}
+
+.card p {
+    padding: 15px;
+    margin-top: 5px;
+}
+
+.card h3 {
+    padding: 0 15px;
+    margin-bottom: 2px;
+}
+
+.card small {
+    padding: 0 15px;
+    font-weight: 600;
+}
+
+.card img{
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.play-btn {
+    position: relative;
+    /* max-width: 150px; */
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.card button {
+    position: relative;
+}
+
+/* CSS Responsiveness */
+
+@media only screen and (max-width: 300px){
+    h1 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 35px;
+}
+
+.card{
+    width: 250px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 30px;
+    border-radius: 10px 10px 0 0;
+    text-align: justify;
+    box-shadow: 0 0 15px rgba(85, 85, 85, 0.2);
+}
+
+.card small {
+    padding: 0 15px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.card p {
+    padding: 15px;
+    margin-bottom: 5px;
+}
+}
+
